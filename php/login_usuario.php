@@ -24,4 +24,7 @@
         exit();
     }
 
+//$result = mysqli_query($conexion,"SELECT score FROM usuario WHERE nick='$nick'");
+
+
 ?>

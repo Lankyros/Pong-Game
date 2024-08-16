@@ -30,8 +30,10 @@
     <title>JUEGO</title>
 </head>
 <body>
-    
-    <a href="php/cerrar_sesion.php" class="cerrarsesion">Cerrar sesion</a>
+    <form action="php/guardar_score.php" id="myForm" method="POST">
+    <input type="hidden" name="numero" id="numero">
+    <button type="submit" class="btn" >Guardar score y Cerrar Sesion</button>
+    </form>  
     <div class="nick"> <?php echo $_SESSION['nick']; ?> </div>
     <div id="canvas-container">
         

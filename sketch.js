@@ -70,21 +70,27 @@ function draw() {
     if((xBall > mouseX && 
         xBall < mouseX + 90) &&
       (yBall + 10 >= H - 20)){
-      xSpeed *= -1;
+
       ySpeed *= -1;
-      score++;
-    }
+      score++;  
+   }
   }
-  
+
 //la pelota toca el piso
 function pelotaPiso() {
 
     if(yBall + 11 >= H ){
-        xSpeed *= -1;
+
         ySpeed *= -1;
         score = score - 1;
     }
 
-}
+  }
+//document.getElementById('score').value = score;
+
+
+
+document.getElementById("numero").value = score;
+
 
 }

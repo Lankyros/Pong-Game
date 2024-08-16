@@ -8,7 +8,7 @@
     $query = "INSERT INTO usuario(nick, password) 
     VALUES('$nick', '$password')";
 
-    //verificar que el correo no se repita en la base de datos
+    //verificar que el nick no se repita en la base de datos
     $verificar_nick = mysqli_query($conexion, "SELECT * FROM usuario WHERE nick='$nick' ");
 
     if(mysqli_num_rows($verificar_nick) > 0 ){

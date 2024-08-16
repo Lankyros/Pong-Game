@@ -105,6 +105,8 @@ body {
     border-radius: 5px;
 }
 
+
+
 .inputs-container p {
     margin: 0;
 }
@@ -134,6 +136,9 @@ body {
     color: #674baf;
     padding-top: 10px;
 }
+
+
+
 
 @media screen and (max-width: 1000px) {
     .image-container {
